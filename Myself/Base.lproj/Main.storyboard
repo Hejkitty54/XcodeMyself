@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,59 +14,43 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Kozue Wendén" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnM-zo-dkN">
-                                <rect key="frame" x="67" y="366" width="220" height="48"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DSC_9726" translatesAutoresizingMaskIntoConstraints="NO" id="WAB-7a-fg1">
+                                <rect key="frame" x="40" y="72" width="240" height="243"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kozue Wendén" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NyM-KB-vVt">
+                                <rect key="frame" x="52" y="323" width="128" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oMY-VL-lZZ">
-                                <rect key="frame" x="67" y="414" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UxS-1g-mqX">
+                                <rect key="frame" x="52" y="358" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zg1-Fp-ZNC">
-                                <rect key="frame" x="148" y="573" width="159" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="about more"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuC-lH-Rb1">
+                                <rect key="frame" x="188" y="494" width="92" height="30"/>
+                                <state key="normal" title="more">
+                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="uGJ-lg-sDQ" kind="show" id="haM-Zd-Xzm"/>
+                                    <segue destination="uGJ-lg-sDQ" kind="show" id="f56-da-u9F"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="DSC_9726" translatesAutoresizingMaskIntoConstraints="NO" id="D5Z-Nv-7xo">
-                                <rect key="frame" x="67" y="72" width="240" height="298"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="zg1-Fp-ZNC" firstAttribute="trailing" secondItem="oMY-VL-lZZ" secondAttribute="trailing" id="3Gc-PE-fzZ"/>
-                            <constraint firstItem="D5Z-Nv-7xo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="47" id="3jB-Ov-yex"/>
-                            <constraint firstItem="qnM-zo-dkN" firstAttribute="leading" secondItem="D5Z-Nv-7xo" secondAttribute="leading" id="8ha-q8-1KJ"/>
-                            <constraint firstItem="oMY-VL-lZZ" firstAttribute="top" secondItem="qnM-zo-dkN" secondAttribute="bottom" id="AUE-8D-PcF"/>
-                            <constraint firstItem="oMY-VL-lZZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KZj-Gq-Xwe"/>
-                            <constraint firstItem="qnM-zo-dkN" firstAttribute="top" secondItem="D5Z-Nv-7xo" secondAttribute="bottom" constant="-4" id="N9C-7d-ssD"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qnM-zo-dkN" secondAttribute="bottom" constant="253" id="UYz-LD-lRe"/>
-                            <constraint firstItem="oMY-VL-lZZ" firstAttribute="leading" secondItem="qnM-zo-dkN" secondAttribute="leading" id="hKQ-9G-Pho"/>
-                            <constraint firstItem="zg1-Fp-ZNC" firstAttribute="top" secondItem="oMY-VL-lZZ" secondAttribute="bottom" constant="31" id="jD0-qa-9n2"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oMY-VL-lZZ" secondAttribute="bottom" constant="125" id="mHq-HW-8BU"/>
-                            <constraint firstItem="D5Z-Nv-7xo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oj8-et-GBX"/>
-                            <constraint firstItem="qnM-zo-dkN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-10.5" id="r9n-93-rck"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="D5Z-Nv-7xo" secondAttribute="bottom" constant="297" id="sB8-pD-uI5"/>
-                            <constraint firstItem="zg1-Fp-ZNC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="40" id="t5m-5q-BkP"/>
-                            <constraint firstItem="D5Z-Nv-7xo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="zfq-OJ-fdZ"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tUJ-EJ-cE8"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056.5" y="337.5"/>
+            <point key="canvasLocation" x="1110" y="338"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BYn-Ho-gGK">
@@ -78,23 +61,45 @@
                         <viewControllerLayoutGuide type="bottom" id="QdU-6l-E9v"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gmj-B1-HAN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About more" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSM-fx-OZf">
-                                <rect key="frame" x="166" y="299" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  Jag älskar katt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSM-fx-OZf">
+                                <rect key="frame" x="65" y="79" width="191" height="58"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                <color key="textColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_0121" translatesAutoresizingMaskIntoConstraints="NO" id="H67-XY-sya">
+                                <rect key="frame" x="0.0" y="145" width="320" height="184"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYY-lS-4eN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1514.5" y="337.5"/>
+            <point key="canvasLocation" x="1618" y="320"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LGv-YJ-gMT">
+            <objects>
+                <viewController id="H7R-mc-iOX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r38-bR-iQO"/>
+                        <viewControllerLayoutGuide type="bottom" id="I2V-aV-5Q0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7os-Mi-fqg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R7x-YI-VJV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2014" y="320"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DWv-N2-JDW">
@@ -118,5 +123,6 @@
     </scenes>
     <resources>
         <image name="DSC_9726" width="1424" height="2144"/>
+        <image name="IMG_0121" width="960" height="718"/>
     </resources>
 </document>
