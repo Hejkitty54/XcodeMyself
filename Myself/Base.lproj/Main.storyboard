@@ -48,10 +48,10 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UxS-1g-mqX">
-                                <rect key="frame" x="46" y="325" width="240" height="135"/>
+                                <rect key="frame" x="46" y="332" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Hej, jag heter Kozue. Jag kommer från Japan och har bott i Sverige i fem år.  Jag började programmering för ungefär ett år sedan och jag gillar det väldigt mycket. Jag gillar att dricka kaffe och surfa på internet. </string>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
