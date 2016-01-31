@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UISlider *slider;
+@property (strong, nonatomic) IBOutlet UIView *backgroundResult;
 
 @end
 
@@ -22,6 +24,17 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(UIColor*)mixedColor{
+    return [UIColor colorWithRed:1.0f
+                           green:self.slider.value
+                            blue:self.slider.value
+                           alpha:1.0f];
+}
+
+- (IBAction)changeColor:(UISlider *)sender {
+    self.backgroundResult.backgroundColor= [self mixedColor];
 }
 
 @end
